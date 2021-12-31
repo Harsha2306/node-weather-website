@@ -9,7 +9,7 @@ const task = async function (location) {
   try {
     msg_1.textContent="Loading...";
     const response = await fetch(
-      `http://localhost:3000/weather?address=${location}`
+      `/weather?address=${location}`
     );
     if (!response.ok) throw new Error("Error Occured");
     const data = await response.json();
