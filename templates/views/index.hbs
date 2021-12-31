@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/app.js"> </script>
+</head
+<body>
+    <div class="main-content">{{>header}}
+        <p>Use this site to get your weather</p>
+        <form action="">
+            <label for="ip"></label>
+            <input type="text" name="ip" id="input_data" placeholder="Enter Location" autofocus >
+            <button type="button" id="search_button">Search</button>
+        </form>
+        <p id="id_1"></p>
+        <p id="id_2"></p>
+    </div>
+    {{>footer}}
+</body>
+</html>
+<!-- practice\public\style.css-->
